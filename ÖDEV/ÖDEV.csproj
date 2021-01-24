@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+</Project>
+Kurs kurs1 = new Kurs();
+kurs1.KursAdi = "c#";
+kurs1.Ogrenci = "Ali";
+kurs1.IzlemeOrani = 80;
+
+Kurs kurs2 = new Kurs();
+kurs2.KursAdi = "phyton";
+kurs2.Ogrenci = "Can";
+kurs2.IzlemeOrani = 30;
+
+Kurs kurs3 = new Kurs();
+kurs3.KursAdi = "Java";
+kurs3.Ogrenci = "Engin";
+kurs3.IzlemeOrani = 50;
+
+Kurs[] kurslar = new Kurs[] { kurs1, kurs2, kurs3 };
+
+foreach (var Kurs in kurslar)
+{
+Console.WriteLine(Kurs.KursAdi + " : " + Kurs.Ogrenci + " : " + Kurs.IzlemeOrani);
+}
+
+Console.WriteLine("Hello World!");
+}
+}
+
+class Kurs
+{
+public string KursAdi { get; set; }
+public string Ogrenci { get; set; }
+public int IzlemeOrani { get; set; }
